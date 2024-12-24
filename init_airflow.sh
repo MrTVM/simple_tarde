@@ -9,7 +9,7 @@ set -e
 : "${AIRFLOW_ADMIN_EMAIL:=admin@example.com}"
 
 # Инициализация базы данных Airflow
-airflow db init
+airflow db migrate
 
 # Создание пользователя Airflow
 airflow users create \
